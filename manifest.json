@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.png",
+         "16": "icon16.png",
+         "32": "icon32.png",
+         "48": "icon48.png",
+         "64": "icon64.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "author": "Prasenjit",
+   "background": {
+      "service_worker": "static/background/index.js"
+   },
+   "content_scripts": [ {
+      "css": [ "iziToast.min.css" ],
+      "js": [ "custom_ai_config.js", "content.js" ],
+      "matches": [ "https://www.linkedin.com/*" ]
+   } ],
+   "description": "Auto-Comment on LinkedIn Posts",
+   "host_permissions": [
+      "https://www.linkedin.com/*",
+      "https://generativelanguage.googleapis.com/*",
+      "https://api.openai.com/*",
+      "https://api.groq.com/*",
+      "https://api.anthropic.com/*",
+      "http://localhost:*/*",
+      "http://127.0.0.1:*/*"
+   ],
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "64": "icon64.png"
+   },
+   "manifest_version": 3,
+   "name": "Commento — Auto Comment for LinkedIn",
+   "permissions": [ "storage", "scripting" ],
+   "version": "1.3.20",
+   "web_accessible_resources": [ {
+      "matches": [ "https://www.linkedin.com/*" ],
+      "resources": [ "assets/*" ]
+   } ]
+}
