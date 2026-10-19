@@ -12,7 +12,6 @@
 - [Supported AI Providers](#-supported-ai-providers)
 - [Project Structure](#-project-structure)
 - [Troubleshooting](#-troubleshooting)
-- [Security Notice](#-security-notice)
 - [License](#-license)
 
 ---
@@ -45,8 +44,8 @@ Because this is a pre-bundled Chrome Extension (Manifest V3), you can run it dir
 
 1. **Clone or Download** this repository:
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/prasenjit-27/Commento.git
+   cd Commento
    ```
 2. **Configure your API Key** (see next section).
 3. Open Google Chrome (or any Chromium browser: Brave, Edge, Opera, etc.) and navigate to:
@@ -56,7 +55,7 @@ Because this is a pre-bundled Chrome Extension (Manifest V3), you can run it dir
 4. In the top-right corner, toggle **Developer mode** to **ON**.
 5. Click the **Load unpacked** button in the top-left corner.
 6. Select the folder containing `manifest.json` (this repository's root directory).
-7. The extension **Commento — AI Booster for LinkedIn** is now installed and active!
+7. The extension **Commento — Auto Comment for LinkedIn** is now installed and active!
 
 ---
 
@@ -136,13 +135,5 @@ You can switch the `provider` property in [`custom_ai_config.js`](custom_ai_conf
 
 ---
 
-## 🔒 Security Notice
-- **Never commit your actual API keys to GitHub!**
-- Before committing or pushing code, ensure [`custom_ai_config.js`](custom_ai_config.js) contains placeholder values (`YOUR_GROQ_API_KEY_HERE`) or use a local private branch.
-- `.env` is included in [`.gitignore`](.gitignore) to prevent accidental credential leakage.
-
----
-
 ## 📄 License
 Distributed under the MIT License. Feel free to fork, customize, and contribute!
-
