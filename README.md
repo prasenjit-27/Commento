@@ -1,4 +1,4 @@
-# 🚀 Commento — AI LinkedIn Engagement Booster
+# 🚀 Commento — Linkedin Auto Commenter
 
 > An open-source Chrome extension that generates smart, context-aware comments on LinkedIn posts using LLMs (powered by Groq, Gemini, OpenAI, Claude, or local Ollama).
 
